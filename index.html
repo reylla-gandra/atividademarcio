@@ -1,14 +1,130 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br                                                            ">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Aulas do Marcinho</title>
   <link href='/style.css' rel='stylesheet'>
+
+  <style>
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <header>
+    <nav>
+<h1 id= "início">Aulas do Marcinho</h1>
+
+<a href="#cascata"> 
+  <strong>Cascata</strong>
+</a>
+
+<a href="#especificidade">
+  <strong>Especificidade</strong>
+</a>
+
+<a href="#combinadores">
+  <strong>Combinadores</strong>
+</a>
+
+<a href="#pseudo">
+  <strong>Pseudo-Classes</strong>
+</a>
+
+<a href="#display">
+  <strong>Displays</strong>
+</a>
+
+<a href="#propriedades">
+  <strong>Propriedades</strong>
+</a>
+
+  <a href="#box">
+    <strong>box-sizing</strong>
+  </a>
+</nav>
+  </header>
+
+  <main>
+    <section id="cascata">
+      <h2>Regra da cascata</h2>
+      <p>A regra da cascata no css funciona como uma cascata real, o ultimo codigo escrito, é o que permanecerá no site.</p>
+    </section>
+
+    <section id="Especificialidades">
+    <h2>Especificialidades</h2>
+     <p>Espeficidade no css é quando um elemento é mais especificos que outros. exemplo: id é mais especifico que class, e class é mais especifico que tag. logo a alteração que vai permanecer, é a do id. </p>
+    </section>
+
+    <section id="Combinadores">
+      <h2>Combinadores</h2>
+      <div>
+        <ol>
+      <h3>.primeira h1</h3>
+        <p>Se um h1 estiver com a class "primeira", voce pode colocar ".primeira h1 {}" no css, para combinar uma classe e um titulo. Ou seja, a alteração sera somente no h1, mesmo se houver outros codigos nessa classe.</p>
+        </ol>
+      </div>
+    
+
+    <div>
+      <ol>
+      <h3>.primeira > h1</h3>
+      <p>O sinal ">" é uma flecha no css, ela indica que vai selecionar o filho da divisão que voce criou. Ou seja, se houver uma div com um h1, dentro de outra div com tambem um h1, o h1 alterado seria o que esta na div de fora, por conta que ele seria filho dela</p>
+      </ol>
+    </div>
+
+    <div>
+      <ol>
+      <h3>.primeiro h1+h1</h3>
+      <p>neste exemplo é usado da seguinte maneira, serão estilizados apenas os h1 que possuem um h1 antes deles, ou seja, o primeiro nao seria estilizado por não ter nenhum h1 antes dele.</p>
+    </ol>
+    </div>
+  </section>
+
+  <section id="Pseudo">
+  <h2>Pseudo-Classes</h2>
+  <div>class=*classes*</div>
+  </section>
+
+  <section id="display">
+    <h2>display</h2>
+    <ol>
+    <h3>display: block</h3>
+    <p>todo elemento que voce colocar na sua pagina, ocupará a largura de tela inteira. Suas propriedades são, width, height, padding, margin, border.</p>
+    <p>os elementos padrão são: h1, p, div, section, main, header, nav, ul, ol.</p>
+    <h3>display: inline</h3>
+    <p>se voce tiver um elemento com display inline abaixo de outro com esse display, no site, eles irão ficar um do lado do outro. Suas propriedades são, padding, margin, border.</p>
+    <p>Os elementos padrão são: a, strong, span, img, button, input, em.</p>
+    <ol>
+  </section>
+
+<section id="propriedades">
+  <h2>Border, padding e margin</h2>
+  <ol>
+    <h3>Border</h3>
+    <p>adiciona uma borda a um elemento</p>
+    <p>exemplo: border: 1px solid black;</p>
+    <h3>Padding</h3>
+    <p>padding: adiciona um espaço entre o conteudo e a borda.</p>
+    <p>exemplo: padding: 10px;</p>
+    <h3>Margin</h3>
+    <p>margin: adiciona um espaço entre uma borda e outra.</p>
+    <p>exemplo: 50xp auto</p>
+  </ol>
+</section>
+
+<section id="box">
+  <h3>box-sizing: border-box</h3>
+  <p>se usado com margin: 0 e padding: 0, globalmente, ele deixa tudo junto para ser mais facil de estilizar os outros elemtenos depois.</p>
+</section>
+
+<hr>
+
+  </main>
+
+  <a href="#inicio">
+    <strong>ir ao inicio</strong>
+  </a>
+
 </body>
 </html>
